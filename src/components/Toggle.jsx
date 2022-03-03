@@ -6,9 +6,9 @@ function Toggle(props) {
     const btnclicked = () => {
         const x = state ? false : true;
         setState(x);
-    }
+    };
 
-    return ( 
+    return (
         <Fragment>
             <div className={`btn ${props.round ? "btn-round" : ""} ${state?"btn-on" : ""}`}>
                 <div className={`slider ${props.round ? "slider-round": ""}`} onClick={btnclicked}>
@@ -17,5 +17,5 @@ function Toggle(props) {
         </Fragment>
         );
 }
- 
+
 export default Toggle;

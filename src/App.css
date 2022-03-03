@@ -62,5 +62,5 @@ html {
   flex-direction: row;
   justify-content: space-around;
   width: 30%;
-  margin: auto;
+  margin: 5rem auto;
 }
