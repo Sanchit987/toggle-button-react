@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+/* General Settings */
+:root {
+  --color-grey: rgb(199, 199, 199);
+  --color-white: rgb(255, 255, 255);
+  --color-navy: rgb(62, 64, 200);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Typography */
+
+html {
+  font-size: 62.5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Toggle Button */
+
+.btn {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--color-grey);
+  background-color: var(--color-grey);
+  width: 7rem;
+  height: 3rem;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-round {
+  border-radius: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slider {
+  cursor: pointer;
+  background-color: var(--color-white);
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 1px;
+  border-radius: 10px;
+}
+
+.slider-round {
+  border-radius: 100px;
+}
+
+.btn-on {
+  justify-content: end;
+  background-color: var(--color-navy);
+  border: 1px solid var(--color-navy);
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30%;
+  margin: auto;
 }
